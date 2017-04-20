@@ -43,7 +43,7 @@ public class ViewModelMain extends ViewModelBase {
 
     public BehaviorSubject<ArrayList<String>> showResultListOfData = BehaviorSubject.createDefault(new ArrayList<String>());
 
-    public void getListOfData() {
+    public void didSelectButtonGetListOfData() {
 
         compositeDisposable.add(
                 Observable.defer(new Callable<ObservableSource<ArrayList<String>>>() {
@@ -101,7 +101,7 @@ public class ViewModelMain extends ViewModelBase {
 
     public BehaviorSubject<String> showResultSendDataToServer = BehaviorSubject.createDefault("");
 
-    public void sendDataToServer() {
+    public void didSelectButtonSendDataToServer() {
 
         compositeDisposable.add(
                 Observable.defer(new Callable<ObservableSource<String>>() {

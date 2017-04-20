@@ -66,14 +66,14 @@ public class MainActivity extends ActivityBase {
         binding.buttonGetListOfData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewModelMain.getListOfData();
+                viewModelMain.didSelectButtonGetListOfData();
             }
         });
 
         binding.buttonSendDataToServer.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                viewModelMain.sendDataToServer();
+                viewModelMain.didSelectButtonSendDataToServer();
             }
         });
 
