@@ -83,8 +83,6 @@ public class MainActivity extends ActivityBase {
 
         compositeDisposable.add(
                 viewModelMain.showProgressBar
-                        .replay(1)
-                        .refCount()
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<Boolean>() {
                             @Override
@@ -96,8 +94,6 @@ public class MainActivity extends ActivityBase {
 
         compositeDisposable.add(
                 viewModelMain.showErrorListOfData
-                        .replay(1)
-                        .refCount()
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<Boolean>() {
                             @Override
@@ -125,8 +121,6 @@ public class MainActivity extends ActivityBase {
 
         compositeDisposable.add(
                 viewModelMain.showResultListOfData
-                        .replay(1)
-                        .refCount()
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<ArrayList<String>>() {
                             @Override
@@ -145,8 +139,6 @@ public class MainActivity extends ActivityBase {
 
         compositeDisposable.add(
                 viewModelMain.showErrorSendDataToServer
-                        .replay(1)
-                        .refCount()
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<Boolean>() {
                             @Override
@@ -174,8 +166,6 @@ public class MainActivity extends ActivityBase {
 
         compositeDisposable.add(
                 viewModelMain.showResultSendDataToServer
-                        .replay(1)
-                        .refCount()
                         .observeOn(AndroidSchedulers.mainThread())
                         .subscribe(new Consumer<String>() {
                             @Override
