@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MVVMConfigurationChanges</string>
+
+    <string name="ok">OK</string>
+
+    <string name="get_list_of_data">get list of data</string>
+    <string name="error_get_list_of_data">error getting list of data</string>
+    <string name="send_data_to_server">send data to server</string>
+    <string name="error_send_data_to_server">error sending data to server</string>
+
+</resources>
